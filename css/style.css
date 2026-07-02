@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+    background-color: #111111;
+    border-bottom: 2px solid #ff6f00;
+}
+.logo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.logo span{
+    color: #ff6f00;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin-left: 30px;
+}
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.5s ease;
+}
+nav ul li a:hover{
+    color: #ff6f00;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    min-height: 80vh;
+}
+.section-text{
+    flex: 2;
+    animation:slideInLeft 3s ease-out;
+}
+.section-text h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    line-height: 12px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.section-text .style{
+    color: #ff6f00;
+}
+.section-text p{
+    font-size: 20px;
+    color: rgb(251, 248, 248);
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+.bouton{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ff6f00;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+.bouton:hover{
+    background-color: #e65c00;
+    transform: translateY(-3px);
+}
+.image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    animation: plimpoul 3s ease-out;
+}
+.image img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0,7) ;
+}
+.menu{
+    padding: 60px 8%;
+    background-color: #222222;
+    text-align: center;
+}
+.menu h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.menu h2 span{
+    color: #ff6f00;
+}
+.produits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.eleman{
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease,border-color 0.3s ease;
+}
+.eleman:hover{
+    transform: translateY(-10px);
+    border-color: #ff6f00;
+}
+.eleman img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.eleman h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.eleman p{
+    font-size: 10px;
+    color: #aaaaaa;
+    margin-bottom: 15px;
+    height: 60px;
+}
+.eleman .prix{
+    font-size: 10px;
+    font-weight: bold;
+    color: #ff6f00;
+}
+.badge{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: #ff6f00;
+    color: white;
+    padding: 5px 10px;
+    font-size: 8px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+@keyframes slideInLeft{
+    from {opacity: 0;transform: translateX(-50px);}
+    to {opacity: 1;transform: translateY(0);}
+}
+@keyframes plimpoul{
+    from {opacity: 0;transform: translateY(50px);}
+    to {opacity: 1;transform: translateY(0);}
+}
+@media
